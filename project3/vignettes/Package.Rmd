@@ -2,6 +2,19 @@
 title: "PackageInstructions"
 output: html_document
 ---
+
+
+```{r}
+download.packages("https://github.com/meganleamoran/Project-Three.git", destdir = "/cloud/project/project3/vignettes/Packages.Rmd")
+```
+
+
+
+
+
+
+
+
 First install tidyverse:
 
 ```{r setup, include=FALSE}
@@ -16,7 +29,7 @@ Next download surveys data and read in:
 ```{r cars}
  download.file(url="https://ndownloader.figshare.com/files/2292169", 
                 destfile = "/cloud/project/data/portal_data_joined.csv")
-surveys <- read.csv("/cloud/project/data/portal_data_joined.csv")
+surveys <- read.csv("/cloud/project/project3/data/portal_data_joined.csv")
 
 ```
 
