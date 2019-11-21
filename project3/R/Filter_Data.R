@@ -7,8 +7,6 @@
 #' @return weights A summary of the average weights
 #' @export surveys_weight_by_year
 
-
-
 surveys_weight_by_year <- function(surveys){ 
    mean_weight <- surveys %>% 
      filter(!is.na(weight)) %>% 
