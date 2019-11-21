@@ -6,7 +6,8 @@ Authors@R: person("Megan","Moran", role = c("aut", "cre"), email = "megan.moran-
 Description: Used to filter out the mean weight from surveys data and show a graph with the mean weight and year
 License: MIT
 Imports:
-  tidyverse
+  tidyverse,
+  magrittr
 Suggests:
   knitr,
   rmarkdown

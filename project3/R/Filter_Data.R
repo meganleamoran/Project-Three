@@ -2,6 +2,7 @@
 #' 
 #' Filters the average weight of surveys data by year
 #' 
+#' @importFrom magrittr %>% 
 #' @param surveys A dataframe containing a column you would like to summarize
 #' @return weights A summary of the average weights
 #' @export surveys_weight_by_year

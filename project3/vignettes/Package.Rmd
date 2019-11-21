@@ -1,0 +1,32 @@
+---
+title: "PackageInstructions"
+output: html_document
+---
+First install tidyverse:
+
+```{r setup, include=FALSE}
+ install.packages("tidyverse")
+library (tidyverse)
+```
+
+## Filter Data
+
+Next download surveys data and read in:
+
+```{r cars}
+ download.file(url="https://ndownloader.figshare.com/files/2292169", 
+                destfile = "/cloud/project/data/portal_data_joined.csv")
+surveys <- read.csv("/cloud/project/data/portal_data_joined.csv")
+
+```
+
+## Visual Data
+
+Define Output
+
+```{r pressure, echo=FALSE}
+output <- surveys_weight_by_year(surveys)
+  
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
