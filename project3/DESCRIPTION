@@ -1,0 +1,16 @@
+Package: JMJprojectthree
+Type: Package
+Title: Filters the average weight and shows a visual by year
+Version: 1.0.0
+Authors@R: person("Megan","Moran", role = c("aut", "cre"), email = "megan.moran-3@selu.edu")
+Description: Used to filter out the mean weight from surveys data and show a graph with the mean weight and year
+License: MIT
+Imports:
+  tidyverse
+Suggests:
+  knitr,
+  rmarkdown
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.0.0
